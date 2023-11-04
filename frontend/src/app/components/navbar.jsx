@@ -45,7 +45,7 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center space-x-4">
-                <Link href='/loginPage'>
+                <Link href='pages/loginPage'>
                   <div className=" text-orange-400 hover:bg-orange-400 hover:text-black rounded-lg p-2">
                     Login
                   </div>
