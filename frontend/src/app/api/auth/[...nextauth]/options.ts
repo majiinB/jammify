@@ -36,8 +36,5 @@ export const options: NextAuthOptions = {
                 }
             }
         })
-    ],
-    // pages: {
-    //provide the pages
-    // }
+    ]
 }
