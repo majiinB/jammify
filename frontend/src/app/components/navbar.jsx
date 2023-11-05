@@ -22,8 +22,8 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center space-x-4">
-                <Link href='/'>
-                  <div className=" text-orange-400 hover:bg-orange-400 hover:text-black rounded-lg p-2">
+                <Link href="/">
+                  <div className="text-orange-400 block hover:bg-orange-400 hover:text-black rounded-lg p-2">
                     Home
                   </div>
                 </Link>
@@ -31,9 +31,11 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center space-x-4">
-                <a href="/" className="text-orange-400 hover:bg-orange-400 hover:text-black rounded-lg p-2">
-                  Browse
-                </a>
+                <Link href="/pages/serverPage" >
+                  <div className="text-orange-400 block hover:bg-orange-400 hover:text-black rounded-lg p-2">
+                    Server
+                  </div>
+                </Link>
               </div>
             </div>
             <div className="hidden md:block">
@@ -45,9 +47,18 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center space-x-4">
-                <Link href='/pages/loginPage'>
+                <Link href='/api/auth/signout'>
                   <div className=" text-orange-400 hover:bg-orange-400 hover:text-black rounded-lg p-2">
-                    Login
+                    Sign out
+                  </div>
+                </Link>
+              </div>
+            </div>
+            <div className="hidden md:block">
+              <div className="ml-4 flex items-center space-x-4">
+                <Link href='/api/auth/signin'>
+                  <div className=" text-orange-400 hover:bg-orange-400 hover:text-black rounded-lg p-2">
+                    Sign in
                   </div>
                 </Link>
               </div>
@@ -94,12 +105,16 @@ const Navbar = () => {
         {isClick && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a href="/" className="text-orange-400 block hover:bg-orange-400 hover:text-black rounded-lg p-2">
-                Home
-              </a>
-              <a href="/" className="text-orange-400 block hover:bg-orange-400 hover:text-black rounded-lg p-2">
-                Browse
-              </a>
+              <Link href="/">
+                <div className="text-orange-400 block hover:bg-orange-400 hover:text-black rounded-lg p-2">
+                  Home
+                </div>
+              </Link>
+              <Link href="/pages/serverPage" >
+                <div className="text-orange-400 block hover:bg-orange-400 hover:text-black rounded-lg p-2">
+                  Server
+                </div>
+              </Link>
               <a href="/" className="text-orange-400 block hover:bg-orange-400 hover:text-black rounded-lg p-2">
                 Charts
               </a>
